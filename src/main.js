@@ -402,6 +402,289 @@ function playReveal() {
     },
     "-=0.1"
   );
+}
+
+function playIntroAnimation() {
+  const t1 = gsap.timeline({
+    defaults: {
+      duration: 0.8,
+      ease: "back.out(1.8)",
+    },
+  });
+  t1.timeScale(0.8);
+
+  t1.to(plank1.scale, {
+    x: 1,
+    y: 1,
+  })
+    .to(
+      plank2.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.5"
+    )
+    .to(
+      workBtn.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.6"
+    )
+    .to(
+      aboutBtn.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.6"
+    )
+    .to(
+      contactBtn.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.6"
+    );
+
+  const tFrames = gsap.timeline({
+    defaults: {
+      duration: 0.8,
+      ease: "back.out(1.8)",
+    },
+  });
+  tFrames.timeScale(0.8);
+
+  tFrames
+    .to(frame1.scale, {
+      x: 1,
+      y: 1,
+      z: 1,
+    })
+    .to(
+      frame2.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.5"
+    )
+    .to(
+      frame3.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.5"
+    );
+
+  const t2 = gsap.timeline({
+    defaults: {
+      duration: 0.8,
+      ease: "back.out(1.8)",
+    },
+  });
+  t2.timeScale(0.8);
+
+  t2.to(boba.scale, {
+    z: 1,
+    y: 1,
+    x: 1,
+    delay: 0.4,
+  })
+    .to(
+      github.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.5"
+    )
+    .to(
+      youtube.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.6"
+    )
+    .to(
+      twitter.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.6"
+    );
+
+  const tFlowers = gsap.timeline({
+    defaults: {
+      duration: 0.8,
+      ease: "back.out(1.8)",
+    },
+  });
+  tFlowers.timeScale(0.8);
+
+  tFlowers
+    .to(flower5.scale, {
+      x: 1,
+      y: 1,
+      z: 1,
+    })
+    .to(
+      flower4.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.5"
+    )
+    .to(
+      flower3.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.5"
+    )
+    .to(
+      flower2.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.5"
+    )
+    .to(
+      flower1.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.5"
+    );
+
+  const tBoxes = gsap.timeline({
+    defaults: {
+      duration: 0.8,
+      ease: "back.out(1.8)",
+    },
+  });
+  tBoxes.timeScale(0.8);
+
+  tBoxes
+    .to(box1.scale, {
+      x: 1,
+      y: 1,
+      z: 1,
+    })
+    .to(
+      box2.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.5"
+    )
+    .to(
+      box3.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.5"
+    );
+
+  const tLamp = gsap.timeline({
+    defaults: {
+      duration: 0.8,
+      delay: 0.2,
+      ease: "back.out(1.8)",
+    },
+  });
+  tLamp.timeScale(0.8);
+
+  tLamp.to(lamp.scale, {
+    x: 1,
+    y: 1,
+    z: 1,
+  });
+
+  const tSlippers = gsap.timeline({
+    defaults: {
+      duration: 0.8,
+      ease: "back.out(1.8)",
+    },
+  });
+  tSlippers.timeScale(0.8);
+
+  tSlippers
+    .to(slippers1.scale, {
+      x: 1,
+      y: 1,
+      z: 1,
+      delay: 0.5,
+    })
+    .to(
+      slippers2.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.5"
+    );
+
+  const tEggs = gsap.timeline({
+    defaults: {
+      duration: 0.8,
+      ease: "back.out(1.8)",
+    },
+  });
+  tEggs.timeScale(0.8);
+
+  tEggs
+    .to(egg1.scale, {
+      x: 1,
+      y: 1,
+      z: 1,
+    })
+    .to(
+      egg2.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.5"
+    )
+    .to(
+      egg3.scale,
+      {
+        x: 1,
+        y: 1,
+        z: 1,
+      },
+      "-=0.5"
+    );
 
   const tFish = gsap.timeline({
     defaults: {
@@ -818,8 +1101,6 @@ const createMaterialForTextureSet = (textureSet) => {
     uniforms: {
       uDayTexture1: { value: loadedTextures.day.First },
       uNightTexture1: { value: loadedTextures.night.First },
-      uDayTexture2: { value: loadedTextures.day.Second },
-      uNightTexture2: { value: loadedTextures.night.Second },
       uDayTexture3: { value: loadedTextures.day.Third },
       uNightTexture3: { value: loadedTextures.night.Third },
       uDayTexture4: { value: loadedTextures.day.Fourth },
