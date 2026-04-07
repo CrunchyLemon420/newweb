@@ -335,7 +335,7 @@ manager.onLoad = function () {
     loadingScreenButton.style.background = "#ead7ef";
     loadingScreenButton.style.color = "#6e5e9c";
     loadingScreenButton.style.boxShadow = "none";
-    loadingScreenButton.textContent = "~ HELLO! :3 ~";
+    loadingScreenButton.textContent = "~ Hello :3 ~";
     loadingScreen.style.background = "#ead7ef";
     isDisabled = true;
 
@@ -1101,6 +1101,8 @@ const createMaterialForTextureSet = (textureSet) => {
     uniforms: {
       uDayTexture1: { value: loadedTextures.day.First },
       uNightTexture1: { value: loadedTextures.night.First },
+      uDayTexture2: { value: loadedTextures.day.Second },
+      uNightTexture2: { value: loadedTextures.night.Second },
       uDayTexture3: { value: loadedTextures.day.Third },
       uNightTexture3: { value: loadedTextures.night.Third },
       uDayTexture4: { value: loadedTextures.day.Fourth },
